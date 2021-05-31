@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.main{
+    position: absolute;
+    height: 100vh;
+    width: 500vw;
+    background-image: url(https://media.giphy.com/media/3ohs82wgr4YK7Xsrle/source.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: leftmove 12s linear infinite  ;
+    
+}
+.tree{
+    position: absolute;
+    background-image: url(trees.png);
+    width: 6000px;
+    height: 100vh;
+    /* background-size: cover; */
+    background-repeat: repeat-x;
+    top: -29%;
+    animation: leftmove 13s linear infinite  ;
+    
+
+}
+.car{
+    /* border: 2px solid red; */
+    width: 380px;
+    height: 150px;
+    position: absolute;
+    /* background-repeat: no-repeat; */
+    bottom: 14vh;
+    left: 10vw;
+    animation: carmove 14s infinite;
+    
+}
+@keyframes carmove {
+    50% {
+        transform: translateX(500px);
+    }
+}
+    
+.car img{
+    width: 380px;
+    height: 110px;
+    position: absolute;
+}
+.wheel1 img{
+    width: 73px;
+    height: 77px;
+    position: absolute;
+    top: 38px;
+    left: 47px;
+    animation: round .1s linear infinite;
+}
+.wheel2 img{
+    width: 73px;
+    height: 75px;
+    position: absolute;
+    top: 40px;
+    left: 235px;
+    animation: round .1s linear infinite;
+}
+
+.track{
+    position: absolute;
+    width: 600vw;
+    height: 40vh;
+    background-image: url(track.png);
+    top: 68vh;
+    animation: leftmove 0.3s linear infinite  ;
+}
+@keyframes round{
+
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+@keyframes leftmove{
+    50%{transform:translateX(-200px);
+    }
+    
+}
+@keyframes treemove {
+    from{
+        0 to
+    }
+    
+}
